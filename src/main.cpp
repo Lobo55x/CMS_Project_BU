@@ -162,7 +162,12 @@ int main() {
                 if (username == "altahanrauf" && password == "2003") {
                     bool adminLoggedIn = true;
                     while (adminLoggedIn) {
-                        showAdminMenu();
+                        cout << "\n--- Admin Panel ---\n";
+                        cout << "1. Add Content\n";
+                        cout << "2. Delete Content\n";
+                        cout << "3. View All Content\n";
+                        cout << "4. Logout\n";
+                        cout << "Select an option: ";
                         int adminChoice;
                         cin >> adminChoice;
                         cin.ignore();
