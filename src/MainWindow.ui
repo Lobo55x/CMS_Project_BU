@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CMS Project</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="pageLogin">
+       <layout class="QVBoxLayout" name="verticalLayoutLogin">
+        <item>
+         <widget class="QLabel" name="labelLoginTitle">
+          <property name="text">
+           <string>Login</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboRole">
+          <item>
+           <property name="text">
+            <string>Student</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Faculty</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Admin</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="editUsername">
+          <property name="placeholderText">
+           <string>Username</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="editPassword">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Password</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLogin">
+          <property name="text">
+           <string>Login</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSignup">
+          <property name="text">
+           <string>Signup (Student Only)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageStudent">
+       <layout class="QVBoxLayout" name="verticalLayoutStudent">
+        <item>
+         <widget class="QLabel" name="labelStudentTitle">
+          <property name="text">
+           <string>Student Panel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnViewContentStudent">
+          <property name="text">
+           <string>View Content</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnAddCourse">
+          <property name="text">
+           <string>Add Course</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnAddMarks">
+          <property name="text">
+           <string>Add Marks</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLogoutStudent">
+          <property name="text">
+           <string>Logout</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageFaculty">
+       <layout class="QVBoxLayout" name="verticalLayoutFaculty">
+        <item>
+         <widget class="QLabel" name="labelFacultyTitle">
+          <property name="text">
+           <string>Faculty Panel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnAddContentFaculty">
+          <property name="text">
+           <string>Add Content for Student</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLogoutFaculty">
+          <property name="text">
+           <string>Logout</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageAdmin">
+       <layout class="QVBoxLayout" name="verticalLayoutAdmin">
+        <item>
+         <widget class="QLabel" name="labelAdminTitle">
+          <property name="text">
+           <string>Admin Panel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnAddContentAdmin">
+          <property name="text">
+           <string>Add Content</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnDeleteContentAdmin">
+          <property name="text">
+           <string>Delete Content</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnViewAllContentAdmin">
+          <property name="text">
+           <string>View All Content</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLogoutAdmin">
+          <property name="text">
+           <string>Logout</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

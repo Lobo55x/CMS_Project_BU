@@ -3,6 +3,47 @@
 #include "User.h"
 #include "Admin.h"
 #include "Content.h"
+#include <QApplication>
+#include "MainWindow.h"
+using namespace std;
+
+void showMainMenu() {
+    cout << "\n--- CMS Main Menu ---\n";
+    cout << "1. Login as Student\n";
+    cout << "2. Login as Faculty\n";
+    cout << "3. Login as Admin\n";
+    cout << "4. Signup (Student Only)\n";
+    cout << "5. Exit\n";
+    cout << "Select an option: ";
+}
+
+void showAdminMenu() {
+    cout << "\n--- Admin Menu ---\n";
+    cout << "1. Add Content\n";
+    cout << "2. Delete Content\n";
+    cout << "3. View All Content\n";
+    cout << "4. Logout\n";
+    cout << "Select an option: ";
+}
+
+void showUserMenu() {
+    cout << "\n--- User Menu ---\n";
+    cout << "1. View Content\n";
+    cout << "2. Logout\n";
+    cout << "Select an option: ";
+}
+
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+    MainWindow w;
+    w.show();
+    return app.exec();
+}
+#include <iostream>
+#include <string>
+#include "User.h"
+#include "Admin.h"
+#include "Content.h"
 using namespace std;
 
 void showMainMenu() {
